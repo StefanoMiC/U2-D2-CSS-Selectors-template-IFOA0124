@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position relative</title>
+    <style>
+        .container {
+            background: white;
+            box-shadow: 0 7px 10px -10px rgb(0 0 0 / 25%);
+            width: 80%;
+            margin: 50px auto;
+            padding: 50px;
+            border-radius: 20px;
+            border: 3px solid #98ca60ba;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border-radius: 6px;
+        }
+
+        .coral {
+            background-color: coral;
+        }
+
+        .crimson {
+            background-color: crimson;
+            position: relative;
+            left: 100px;
+            top: -50px;
+        }
+
+        .antique {
+            background-color: antiquewhite;
+            top: 50px;
+            left: -100px;
+            position: relative;
+        }
+
+        h3 {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Position relative</h2>
+    <ol>
+        <li>permette di posizionare e quindi spostare un elemento relativamente alla sua posizione iniziale</li>
+        <li><u>mantiene lo spazio iniziale riservato</u></li>
+    </ol>
+    <section class="container">
+
+        <div class="box antique"></div>
+        <div class="box coral"></div>
+        <div class="box crimson"></div>
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+
+    </section>
+</body>
+
+</html>

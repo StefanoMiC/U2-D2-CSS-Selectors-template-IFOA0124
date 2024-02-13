@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+body {
+  margin: 0;
+  padding-top: 42px;
+}
+
+.card {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  width: 33.333%;
+  margin-right: -4px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid lightblue;
+  position: relative;
+}
+
+.card .img-wrapper {
+  position: relative;
+}
+
+.card .img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background-color: #0000006b; */
+  /* opacity: 0.2; */
+  background-image: linear-gradient(to top, #0000009c 0%, transparent 50%);
+}
+
+.card .img-wrapper h4 {
+  position: absolute;
+  margin: 0;
+  bottom: 10px;
+  left: 6px;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card .badge {
+  background-color: crimson;
+  color: white;
+  padding: 0.25rem;
+  position: absolute;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  right: 0;
+  bottom: 0px;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
+.container {
+  background: white;
+  box-shadow: 0 7px 10px -10px rgb(0 0 0 / 25%);
+  width: 80%;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 20px;
+  border: 3px solid #98ca60ba;
+  position: relative;
+}
+
+.container p {
+  min-height: 100vh;
+}
+
+.container h4 {
+  background-color: plum;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  position: sticky;
+  top: 42px;
+}
+
+.container > div {
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.coral {
+  background-color: coral;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.crimson {
+  background-color: crimson;
+}
+
+.antique {
+  background-color: antiquewhite;
+}
+
+.box span {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  /* top, right, bottom, left = 0 */
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: cyan;
+}
+
+h3 {
+  display: inline-block;
+}
+
+#fixed {
+  position: fixed;
+}
+
+nav {
+  padding: 0.75rem 2rem;
+  background-color: palegreen;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+@media screen and (max-width: 810px) {
+  .coral {
+    position: initial;
+  }
+}
